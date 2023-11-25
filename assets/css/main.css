@@ -1,0 +1,66 @@
+.color-rojo {
+    color: red;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+h1{
+    color: blue;
+}
+
+div.contenedor{
+    border: 1px green solid;
+    border-radius: 15px;
+    padding-left: 20px;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+
+main.pruebas{
+    font-family: Arial;
+}
+
+main.clase23{
+    font-family: fantasy;
+}
+
+img.imagen{
+    width: 100px;
+}
+
+.border-azul{
+    border: 1px blue solid;
+}
+
+.text-success{
+    font-weight: bold;
+}
+
+
+table tr td,
+table tr th{
+    border: 1px solid green;
+}
+
+.tabla-categorias{
+    width: 100%;
+    border-collapse: collapse;    
+}
+
+.tabla-categorias th,
+.tabla-categorias td{
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+    width: 25%;
+}

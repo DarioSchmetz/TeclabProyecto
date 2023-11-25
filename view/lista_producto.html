@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi empresa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div>
+            <table class="tabla-categorias">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Nombre</th>
+                        <th>Nombre</th>
+                        <th>Nombre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <?php foreach ($lista_categorias as $idx => $categoria){ ?>                    
+                        <td>
+                            <img style="max-width: 100%" src="http://localhost/PROYECTOTECLAB/img/camara1/<?php echo $categoria['img']; ?>">
+                            <?php echo $categoria['nombre_categoria']." - ".$categoria['id'] ?>
+                        </td>
+                        <?php if (($idx + 1) % 4 == 0){ ?>
+                    </tr><tr>      
+                        <?php } 
+                        } ?>
+                    </tr>  
+                    
+                </tbody>
+            </table>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
+        </div>
+    </body>
+</html>

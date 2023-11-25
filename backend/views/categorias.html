@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>ALTA DE CATEGORIAS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    </head>
+    <body>
+        <div>
+            <form method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="accion" value="guardar">
+                <input type="hidden" name="id" value="<?php echo isset($_POST['id']) ? $_POST['id'] : '' ?>">
+                <label for='nombre_categoria'>Nombre</label><br>
+                <input type="text" name="nombre" value="<?php echo isset($_POST['nombre']) ? $_POST['nombre'] : '' ?>" 
+                       maxlength="100" minlength="3" id="nombre_categoria" placeholder="Ingrese nombre" autocomplete="off"
+                       required="">
+                
+                <br><br>
+                <?php if (isset($_POST['img']) && isset($_POST['img']) != ''){ 
+                $img = "http://localhost/PROYECTOTECLAB/uploads/categorias/".$_POST['img'] ?>
+                <img src="<?php echo $img ?>">
+                <?php } ?>
+                <label for='imagen_categoria'>Imagen</label><br>
+                <input type="file"  name="imagen"   id="imagen_categoria" placeholder="Subir Imagen"
+                       autocomplete= "off" required="">
+   
+                <br><br>
+                <button type="submit">Guardar</button>
+            </form>
+                
+        </div>
+    </body>
+</html>
